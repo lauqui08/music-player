@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+article {
+  display: inline-grid;
+  grid-template-rows: 600px 600px;
+  grid-template-columns: 500px 500px;
+  grid-gap: 3px;
+  background: url("./public/bg.png") no-repeat fixed;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.music-player {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: rgb(143, 146, 150, 0.8);
+}
+
+.album {
+  margin-top: 30px;
+}
+.album-cover {
+  position: absolute;
+  left: 120px;
+}
+.album-cover img {
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.album-disc {
+  position: absolute;
+  left: 210px;
+  top: 97px;
+}
+.album-disc img {
+  width: 180px;
+}
+.song-details {
+  text-align: center;
+  margin-top: 250px;
+  line-height: 0.4;
+}
+.song-details h4 {
+  font-weight: normal;
+}
+.song-timer {
+  margin-top: 30px;
+  display: inline-grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 175px 175px;
+  grid-gap: 3px;
+}
+.timer-start {
+  padding-left: 25px;
+  text-align: left;
+}
+.timer-end {
+  padding-right: 25px;
+  text-align: right;
+}
+.song-range {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.song-range input[type="range"] {
+  width: 100%;
+}
+.player-button {
+  margin-top: 20px;
+  display: inline-grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 116px 116px 116px;
+  grid-gap: 3px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn img {
+  width: 45px;
+  cursor: pointer;
+}
+.btn .btn-play {
+  width: 70px;
+}

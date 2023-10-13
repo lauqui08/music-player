@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <article>
+      <section>
+        <div class="music-player">
+          <div class="album">
+            <div class="album-disc">
+              <img src="./public/photos/disc.png" alt="" />
+            </div>
+            <div class="album-cover">
+              <img src="./public/photos/cover.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="song-details">
+            <h3>All Too Well (Taylor's Version)</h3>
+            <h4>Taylor Swift</h4>
+            <div class="song-timer">
+              <div class="timer-start">
+                <span class="timer-start-min" id="timerStartMin">0</span>:<span
+                  class="timer-start-sec"
+                  id="timerStartSec"
+                  >00</span
+                >
+              </div>
+              <div class="timer-end">
+                <span class="timer-end-min" id="timerEndMin">5</span>:<span
+                  class="timer-end-sec"
+                  id="timerEndSec"
+                  >00</span
+                >
+              </div>
+            </div>
+            <div class="song-range">
+              <input id="songRange" type="range" value="1" />
+            </div>
+            <div class="player-button">
+              <div class="btn">
+                <img src="./public/buttons/skip-start-fill.svg" alt="Prev" />
+              </div>
+              <div class="btn">
+                <img
+                  class="btn-play"
+                  id="btnPlay"
+                  src="./public/buttons/play-circle-fill.svg"
+                  alt="Play"
+                />
+              </div>
+              <div class="btn">
+                <img src="./public/buttons/skip-end-fill.svg" alt="Next" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>2</section>
+    </article>
+    <script src="index.js"></script>
+  </body>
+</html>
