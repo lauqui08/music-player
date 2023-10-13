@@ -6,17 +6,20 @@
 
 article {
   display: inline-grid;
-  grid-template-rows: 600px 600px;
+  grid-template-rows: auto auto;
   grid-template-columns: 500px 500px;
   grid-gap: 3px;
-  background: url("./public/bg.png") no-repeat fixed;
+  background: url("./public/bg.png") no-repeat scroll;
+  border: 2px solid black;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .music-player {
